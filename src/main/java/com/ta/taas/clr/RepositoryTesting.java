@@ -47,6 +47,7 @@ public class RepositoryTesting implements CommandLineRunner {
                 .group("Spring")
                 .title("Cat & Toys Ex")
                 .description("Spring Homework")
+                .completed(false)
                 .when(Timestamp.valueOf(LocalDateTime.now().plusWeeks(2)))
                 .user(u2)
                 .build();
@@ -56,6 +57,7 @@ public class RepositoryTesting implements CommandLineRunner {
                 .group("Spring")
                 .title("Author & Books Ex")
                 .description("Spring Homework")
+                .completed(false)
                 .when(Timestamp.valueOf(LocalDateTime.now().plusWeeks(2)))
                 .user(u2)
                 .build();
@@ -66,6 +68,7 @@ public class RepositoryTesting implements CommandLineRunner {
                 .group("Spring")
                 .title("prepare for Spring Exam")
                 .description("Spring Homework")
+                .completed(false)
                 .when(Timestamp.valueOf(LocalDateTime.of(2022,5,26,15,25)))
                 .user(u3)
                 .build();

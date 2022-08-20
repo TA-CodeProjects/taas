@@ -7,7 +7,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import java.time.LocalDateTime;
 
 @Data
@@ -21,7 +20,8 @@ public class TaskPayloadDto {
     private String info;
     @NotBlank
     private String classification;
-
-//    @JsonFormat(pattern = "dd/MM/yyyy HH:mm:ss")
+    @NotBlank
+    private boolean done;
+    @NotBlank
     private LocalDateTime dueDate;
 }

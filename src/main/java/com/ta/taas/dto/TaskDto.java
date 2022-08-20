@@ -23,6 +23,8 @@ public class TaskDto {
     @NotBlank
     private String classification;
     @NotBlank
+    private boolean done;
+    @NotBlank
     private LocalDateTime dueDate;
 
     public TaskDto(TaskPayloadDto payloadDto){
@@ -30,5 +32,6 @@ public class TaskDto {
         this.classification = payloadDto.getClassification();
         this.dueDate = payloadDto.getDueDate();
         this.info = payloadDto.getInfo();
+        this.done = payloadDto.isDone();
     }
 }

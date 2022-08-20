@@ -17,6 +17,7 @@ public class TaskMapper implements Mapper<Task, TaskDto> {
                 .group(taskDto.getClassification())
                 .title(taskDto.getCaption())
                 .id(taskDto.getId())
+                .completed(taskDto.isDone())
                 .when(Timestamp.valueOf(taskDto.getDueDate()))
                 .build();
     }
@@ -29,6 +30,7 @@ public class TaskMapper implements Mapper<Task, TaskDto> {
                 .dueDate(task.getWhen().toLocalDateTime())
                 .classification(task.getGroup())
                 .info(task.getDescription())
+                .done(task.isCompleted())
                 .build();
     }
 

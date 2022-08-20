@@ -21,6 +21,8 @@ public class Task {
     private String description;
     @Column(nullable = false,name = "task_group")
     private String group;
+    @Column(nullable = false)
+    private boolean completed;
     @Column(name = "task_when")
     private Timestamp when;
 

@@ -19,6 +19,11 @@ import java.util.UUID;
 public class WelcomeController {
     private final WelcomeService welcomeService;
 
+    @GetMapping
+    public String hello(){
+        return "hello";
+    }
+
     @PostMapping("register")
     @ResponseStatus(HttpStatus.CREATED)
     public void register(@Valid @RequestBody RegisterReqDto registerReqDto) throws TaskSecurityException {

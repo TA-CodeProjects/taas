@@ -8,7 +8,7 @@ Simple todo application users can register submit a task, edit, delete and check
 
 **Simple Users** - can register, login and implement CRUD on task.
 
-**Admin** - can create companies and customers.
+**Admin** - can see users and the tasks they have created.
 
 ### Login:
 

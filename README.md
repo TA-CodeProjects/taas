@@ -1,14 +1,12 @@
 # taas-backend
 
-Simple todo application users can register submit a task, edit, delete and check it when completed
+Simple todo application users can register, submit a task, edit, delete and check it when completed
 
 ### The application have two type of users:
 
-**Admin** - can see all task in the application.
+**Admin** - Can see all task in the application.
 
-**Simple Users** - can register, login and implement CRUD on task.
-
-**Admin** - can see users and the tasks they have created.
+**Users** - Can register, login and implement CRUD on task.
 
 ### Login:
 
